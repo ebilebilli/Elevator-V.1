@@ -1,11 +1,17 @@
 import random
-from elevator import building_floors, passenger_names
+from elevator import building_floors
 
 class Passengers:
-    def __init__(self,passanger: list[str], current_floor: int, target_floor: int):
+    def __init__(self,passanger):
         self.passangers = passanger
-        self.current_floor = current_floor
-        self.target_floor = target_floor
+        self.current_floor = random.choice(building_floors)
+        self.target_floor = random.choice(building_floors)
 
-passenger_example = Passengers(random.choice(passenger_names), random.choice(building_floors), random.choice(building_floors))
+passenger_example_one = Passengers('Leyla')
+passenger_example_two = Passengers('Nigar')
+
+
+
+
+
 

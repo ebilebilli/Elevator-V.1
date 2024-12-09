@@ -23,7 +23,6 @@ class Elevator:
             print(f'{down_message} to floor: {target}')
             sleep(1.2)
 
-
     def opening(self):
             print(opening)
             sleep(1.2)

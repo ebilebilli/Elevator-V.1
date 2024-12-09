@@ -3,7 +3,7 @@ from passengers import Passengers, passenger_example_one, passenger_example_two
 from move_with_passenger import elevator_move_with_passenger
 from back_settings.message_to_user import enter_message
 
-def elevator_system(person_one: Passengers, person_two: Passengers, elevator: Elevator):
+def main(person_one: Passengers, person_two: Passengers, elevator: Elevator):
     print(f"Elevator floor: {elevator.current_floor}, "
           f"{person_one.passangers}: {person_one.current_floor} Target Floor: {person_one.target_floor}, "
           f"{person_two.passangers}: {person_two.current_floor} Target Floor: {person_two.target_floor}")
@@ -41,4 +41,4 @@ def elevator_system(person_one: Passengers, person_two: Passengers, elevator: El
         elevator_move_with_passenger(person_one, person_two, elevator)
 
 
-elevator_system(person_one=passenger_example_one, person_two=passenger_example_two, elevator=building_elevator)
+main(person_one=passenger_example_one, person_two=passenger_example_two, elevator=building_elevator)
